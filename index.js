@@ -8,3 +8,11 @@ function getComputerChoice() {
         return 'scissors';
     }
 }
+
+function getHumanChoice() {
+    let input;
+    do {
+        input = prompt("Please enter rock/paper/scissors: ");
+    } while (input != "rock" && input != "paper" && input != "scissors");
+    return input;
+}
