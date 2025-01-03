@@ -9,14 +9,6 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    let input;
-    do {
-        input = prompt("Please enter rock/paper/scissors: ").toLowerCase();
-    } while (input != "rock" && input != "paper" && input != "scissors");
-    return input;
-}
-
 function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
 
